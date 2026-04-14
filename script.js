@@ -29,3 +29,13 @@ const swiper = new Swiper('.heroSwiper', {
   },
 
 });
+
+// Keyboard Navigation
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'ArrowRight') {
+    swiper.slideNext();
+  }
+  if (e.key === 'ArrowLeft') {
+    swiper.slidePrev();
+  }
+});
